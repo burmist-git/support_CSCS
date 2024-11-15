@@ -1,0 +1,14 @@
+singularity/3.6.4-daint(27):ERROR:150: Module 'singularity/3.6.4-daint' conflicts with the currently loaded module(s) 'singularity/3.6.4'
+singularity/3.6.4-daint(27):ERROR:102: Tcl command execution failed: conflict singularity
+
+/usr/local/lib/python3.10/dist-packages/ctapipe/core/provenance.py:332: MissingReferenceMetadata: Could not read reference metadata for input file: /scratch/snx3000/lburmist/support_CSCS/corsika_run1.simtel.gz
+  warnings.warn(
+2024-11-15 12:06:44,770 [1;33mWARNING[0m [ctapipe.core.telescope_component] (telescope_component.attach_subarray): TelescopeParameter type argument 'MST_*' did not match any known telescope types
+2024-11-15 12:06:44,770 [1;33mWARNING[0m [ctapipe.core.telescope_component] (telescope_component.attach_subarray): TelescopeParameter type argument 'SST_1M_*' did not match any known telescope types
+2024-11-15 12:06:44,987 [1;33mWARNING[0m [ctapipe.ctapipe-process.DataWriter.HDF5TableWriter] (hdf5tableio._create_hdf5_table_schema): Column first_cell_id with value None of type <class 'NoneType'>  of container R1CameraContainer in table r1/event/telescope/tel_001 not writable, skipping
+2024-11-15 12:06:44,987 [1;33mWARNING[0m [ctapipe.ctapipe-process.DataWriter.HDF5TableWriter] (hdf5tableio._create_hdf5_table_schema): Column module_hires_local_clock_counter with value None of type <class 'NoneType'>  of container R1CameraContainer in table r1/event/telescope/tel_001 not writable, skipping
+2024-11-15 12:06:44,987 [1;33mWARNING[0m [ctapipe.ctapipe-process.DataWriter.HDF5TableWriter] (hdf5tableio._create_hdf5_table_schema): Column pedestal_intensity with value None of type <class 'NoneType'>  of container R1CameraContainer in table r1/event/telescope/tel_001 not writable, skipping
+2024-11-15 12:06:44,987 [1;33mWARNING[0m [ctapipe.ctapipe-process.DataWriter.HDF5TableWriter] (hdf5tableio._create_hdf5_table_schema): Column calibration_monitoring_id with value None of type <class 'NoneType'>  of container R1CameraContainer in table r1/event/telescope/tel_001 not writable, skipping
+slurmstepd: error: Detected 1 oom-kill event(s) in StepId=58305931.0 cgroup. Some of your processes may have been killed by the cgroup out-of-memory handler.
+srun: error: nid01309: task 0: Out Of Memory
+srun: launch/slurm: _step_signal: Terminating StepId=58305931.0

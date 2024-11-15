@@ -1,0 +1,14 @@
+[2024-11-15 13:06:33] Start greasing /scratch/snx3000/lburmist/support_CSCS/greasy_job.joblist
+[2024-11-15 13:06:33] INFO: File with 1 correct Tasks
+[2024-11-15 13:06:33] INFO: BASIC engine is ready to run with 72 workers
+[2024-11-15 13:06:33] ERROR: BasicEngine::init Detected CPU only compute nodes
+[2024-11-15 13:06:33] INFO: Allocating task 1
+[2024-11-15 13:06:33] INFO: [BasicEngine::executeTask[1]] Task 1 on node nid01309 command: srun -O -s -n 1 -N 1 -w nid01309 --cpu_bind=none --gres=craynetwork:0 --mem=1706 -c 1 singularity run -B /scratch/snx3000/lburmist/:/scratch/snx3000/lburmist/ /scratch/snx3000/lburmist/singularity/21.10.2024/ctapipe.sif ctapipe-process --overwrite --input=/scratch/snx3000/lburmist/support_CSCS/corsika_run1.simtel.gz --output=/scratch/snx3000/lburmist/support_CSCS/gamma_run1.r1.dl1.h5 --config=/scratch/snx3000/lburmist/support_CSCS/ctapipe_standard_sipm_config.json --write-images --write-parameters --no-write-showers --DataWriter.write_r1_waveforms=True --DataWriter.transform_waveform=True --DataWriter.write_index_tables=True
+[2024-11-15 13:20:36] ERROR: Task 1 located in line 1 failed with exit code 1 on node nid01309. Elapsed: 00:14:03
+[2024-11-15 13:20:36] INFO: BASIC engine finished
+[2024-11-15 13:20:36] INFO: Summary of 1 tasks: 0 OK, 1 FAILED, 0 CANCELLED, 0 INVALID.
+[2024-11-15 13:20:36] INFO: Total time: 00:14:03
+[2024-11-15 13:20:36] INFO: Resource Utilization: 1.38%
+[2024-11-15 13:20:36] INFO: Creating restart file /scratch/snx3000/lburmist/support_CSCS/greasy_job.joblist-undefined.rst...
+[2024-11-15 13:20:36] INFO: Restart file created
+[2024-11-15 13:20:36] Finished greasing /scratch/snx3000/lburmist/support_CSCS/greasy_job.joblist
