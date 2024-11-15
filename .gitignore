@@ -2,3 +2,7 @@
 .*~
 corsika_run1.simtel.gz
 gamma_run1.r1.dl1.h5
+ctapipe-process.provenance.log
+ctapipe.58305931.err
+ctapipe.58305931.out
+greasy-58305931.log
