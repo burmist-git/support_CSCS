@@ -1,0 +1,5 @@
+siffile = /scratch/snx3000/lburmist/singularity/21.10.2024/ctapipe.sif
+input   = /scratch/snx3000/lburmist/support_CSCS/corsika_run1.simtel.gz
+output  = /scratch/snx3000/lburmist/support_CSCS/gamma_run1.r1.dl1.h5
+config  = /scratch/snx3000/lburmist/support_CSCS/ctapipe_standard_sipm_config.json
+singularity run -B /scratch/snx3000/lburmist/:/scratch/snx3000/lburmist/ /scratch/snx3000/lburmist/singularity/21.10.2024/ctapipe.sif ctapipe-process --overwrite --input=/scratch/snx3000/lburmist/support_CSCS/corsika_run1.simtel.gz --output=/scratch/snx3000/lburmist/support_CSCS/gamma_run1.r1.dl1.h5 --config=/scratch/snx3000/lburmist/support_CSCS/ctapipe_standard_sipm_config.json --write-images --write-parameters --no-write-showers --DataWriter.write_r1_waveforms=True --DataWriter.transform_waveform=True --DataWriter.write_index_tables=True
