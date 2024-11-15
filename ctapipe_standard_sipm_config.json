@@ -1,0 +1,25 @@
+{
+    "DataWriter": {
+        "Contact": {
+            "name": "Leonid-Burm",
+            "email": "leonid.burmistrov@unige.ch",
+            "organization": "UniGe"
+        },
+        "overwrite": true
+    },
+    "CameraCalibrator": {
+        "image_extractor_type": "NeighborPeakWindowSum"
+    },
+    "ImageProcessor": {
+        "image_cleaner_type": "TailcutsImageCleaner",
+        "TailcutsImageCleaner": {
+            "picture_threshold_pe": [
+                ["type", "*", 5.0]
+            ],
+            "boundary_threshold_pe": [
+                ["type", "*", 3]
+            ],
+            "min_picture_neighbors": [["type", "*", 2]]
+	}
+    }
+}
